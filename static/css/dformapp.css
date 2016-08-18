@@ -1,0 +1,22 @@
+/* create discussion app css stylesheet */
+body {
+  background-color: #ffffff;
+  font-family: sans-serif;
+  color: #333333;
+  font-size: 16px;
+}
+
+
+.has-error-border {
+	border-style: solid;
+    border-color: #E74C3C;
+}
+
+.has-error-text {
+	color: #E74C3C;
+}
+
+.has-error .tags{
+	border-style: solid;
+    border-color: #E74C3C;
+}

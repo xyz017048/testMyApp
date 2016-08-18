@@ -1,0 +1,141 @@
+@CHARSET "ISO-8859-1";
+
+body {
+  background-color: #ffffff;
+  font-family: sans-serif;
+  color: #333333;
+  font-size: 16px;
+}
+
+/** Discussion Preview Box **/
+.box {
+	width: 200px;
+	height: 277px;
+	background: #F6F8FA;
+	border: 3px solid #96CEB4;
+	box-shadow: 2px 2px 4px 0px #96CEB4;
+	margin: 5px 5px 5px 5px;
+	float: left;
+}
+.img_box {
+	position:relative;
+}
+.favorite_img {
+	z-index: 999;
+	width: 25px;
+	height: 25px;
+    right: 0;
+    position:absolute;
+    background-image: url("/webapp/static/img/favorite.png");
+}
+.favorited_img {
+	z-index: 999;
+	width: 25px;
+	height: 25px;
+    right: 0;
+    position: absolute;
+	background-image: url("/webapp/static/img/favorited.png");
+}
+.icons {
+	z-index: 999;
+	position:absolute;
+	left:0;
+	top:0;
+}
+
+#concept_content {
+	display: none;
+	color: white;
+	font-weight: bold;
+	margin-left: 35px;
+	padding-top: 5px;
+}
+.noDisplay {
+	display: none;
+}
+.has_concept_img {
+	width: 27px;
+	height: 27px;
+	margin-top: 5px;
+	margin-left: 5px;
+	background-image: url("/webapp/static/img/concept.png");
+}
+.has_concept_img:hover {
+	width: 120px;
+	border-radius: 50px;
+	vertical-align: middle;
+	background-color: #F8E71C;
+	background-repeat:no-repeat; 
+}
+.has_concept_img:hover #concept_content {
+	display: block;
+}
+.has_crowfund_img {
+	width: 27px;
+	height: 27px;
+	margin-top: 5px;
+	margin-left: 5px;
+	background-image: url("/webapp/static/img/crowdfunding.png");	
+}
+.has_shop_img {
+	width: 27px;
+	height: 27px;
+	margin-top: 5px;
+	margin-left: 5px;
+	background-image: url("/webapp/static/img/shop.png");	
+}
+
+.images {
+	width: 100%;
+	height: 150px;
+}
+
+.images_gray {
+	filter: brightness(70%);
+	-webkit-filter: brightness(70%);
+	-moz-filter: brightness(70%);
+	-o-filter: brightness(70%);
+}
+
+.bottom_box {
+	text-align: center;
+	padding: 5px 0px 0px 0px;
+}
+.bottom_title {
+	margin: 5px 0px 0px 0px;
+	font-size: 14px;
+}
+.bottom_sections_list {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	font-size: 12px;
+}
+.bottom_sections_list li {
+	float: left;
+	padding: 0px 5px 0px 5px;
+}
+.bottom_sections_list li p {
+	display: block;
+}
+.bottom_status {
+	border-top: 1px solid #DEE0E3;
+}
+.btm_status_label {
+	margin: 10px 0px 0px 10px;
+}
+.btm_text {
+	float: left;
+	font-size: 12px;
+}
+.btn_discuss {
+	width: 80px;
+	height: 36px;
+	float: right;
+	border: none;
+	text-align: center;
+	color: #ffffff;
+	font-weight: bolder;
+	background-color: #e74c3c;
+}
